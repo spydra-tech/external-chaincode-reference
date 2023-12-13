@@ -26,6 +26,7 @@ type SmartContract struct {
 
 func main() {
 
+	// Take config from runtime environment variables
 	config := serverConfig{
 		CCType:  os.Getenv("CHAINCODE_TYPE"),
 		CCID:    os.Getenv("CORE_CHAINCODE_ID"),
